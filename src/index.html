@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
   <title>HTML Portfolio</title>
 </head>
-
 <body>
-
-  <header>
-    <h1>Sergio Cruz</h1>
-    <h2>Application Developer</h2>
-
-		<nav>
-	    <ul>
-	      <li><a href="index.html" class="active">Home</a></li>
-	      <li><a href="about.html">About</a></li>
-	    </ul>
-	  </nav>  
-	</header>
-
-	<main>
-	  <section class="tagline">
-	    <div class="content-wrapper">
-	      <h3>A bit more about me</h3>
-	      <p>Hey I am Sergio, I work for <a target="_blank" href="https://www.codeschool.com">Code School</a> and I love writing JavaScript!</p>
+	
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-Shane" href="#">Shane</a>
 	    </div>
-	  </section>
 
-
-	  <section class="skills">
-	    <div class="content-wrapper">
-	      <h3>Skills</h3>
-	      <p>Here are some of the technologies I enjoy writing day-to-day:</p>
-	      <ul>
-	        <li>HTML &amp; CSS</li>
-	        <li>Node.js</li>
-	        <li>React</li>
-	        <li>Angular 2</li>
-	        <li>Webpack</li>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#">About</a></li>
 	      </ul>
 	    </div>
-	  </section>
+	    <!-- /.navbar-collapse -->
+	  </div>
+	  <!-- /.container-fluid -->
+	</nav>
 
-	  <section class="contact">
-	    <div class="content-wrapper">
-	      <h3>How to contact me</h3>
-	      <p>The easiest way to contact me is via twitter: <a target="_blank" href="https://twitter.com/hashtagserg">@hashtagserg</a></p>
+	<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+	    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <div class="container">
+	        <div class="carousel-caption">
+	          <h1>Who I am</h1>
+	          <p>Greetings! I'm Shane. I'm currently a web product analyst learning code in my spare time.</p>
+	        </div>
+	      </div>
 	    </div>
-  </section>
-	</main>
-  <footer>
-    <div class="content-wrapper">
-      <h3>Credits</h3>
-      <p>This portfolio was created using <a href='https://www.codeschool.com'>Code School's</a> <a href='https://github.com/codeschool/SemanticHTMLPortfolioProject'>Semantic HTML Portfolio Project</a> template.</p>
-    </div>
-  </footer>
+	    <div class="item">
+	      <div class="container">
+	        <div class="carousel-caption">
+	          <h1>Languages I'm learning</h1>
+	          <p>HTML, CSS, JavaScript, Java, PHP, and Python, at the moment.</p>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <div class="container">
+	        <div class="carousel-caption">
+	          <h1>What I'm wanting to do with what I've learned</h1>
+	          <p>Ideally, I'd like to become proficient enough to efficently create sites and applications. Perhaps even some automation!</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+	<div class="marketing">
+		<div class="container">
+			<div class="col-md-4">
+				<span class="glyphicon glyphicon-heart"></span>
+					<h3>HTML &amp; CSS</h3>
+					<p>I've learned a good bit of HTML &amp; CSS</p>
+			</div>
+				<span class="glyphicon glyphicon-heart"></span>
+					<h3>JavaScript &amp; Python</h3>
+					<p>I've learned some of both, but not enough to feel comfortable</p>
+				<span class="glyphicon glyphicon-heart"></span>
+					<h3>Java &amp; PHP</h3>
+					<p>I haven't started learning these just yet &amp; CSS</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h3>Get in touch</h3>
+			<p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
+	</div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
